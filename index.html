@@ -5,23 +5,44 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
-    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Nunito:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css"/>
 </head>
 <body>
-    <h1>Rock Paper Scissors</h1>
+    <div class="container">
+        <h1>Rock Paper Scissors</h1>
 
-    <div class="score-board">
-        <p id="player_score-el">Your Score: 0</p>
-        <p id="computer_score-el">CPU Score: 0</p>
+        <div class="stage">
+            <div class="card">
+                <p class="player-score_el" id="player_score-el">You: 0</p>
+                <div id="player_choice-el"></div>
+            </div>
+            <div class="card">
+                <p class="player-score_el" id="computer_score-el">Computer: 0</p>
+                <div id="computer_choice-el"></div>
+            </div>
+        </div>
+
+        <p class="text" id="result-el">Press any button to start</p>
+        
+        <div class="controls">
+            <button id="rock-button">
+                <img src="assets/emoji_rock_.svg" alt="Rock icon"/>
+                <span>Rock</span>
+            </button>
+            <button id="paper-button">
+                <img src="assets/emoji_paper_.svg" alt="paper icon"/>
+                <span>Paper</span>
+            </button>
+            <button id="scissors-button">
+                <img src="assets/emoji_scissors_.svg"  alt="scissors icon"/>
+                <span>Scissors</span>
+            </button>
+        </div>
     </div>
     
-
-    <p id="computer_choice-el"></p>
-    <p id="player_choice-el"></p>
-    
-    <button onclick="playRock()">✊</button>
-    <button onclick="playPaper()">🖐</button>
-    <button onclick="playScissors()">✌</button>
 
     <script src="main.js"></script>
 </body>
