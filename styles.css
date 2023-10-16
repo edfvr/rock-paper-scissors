@@ -6,15 +6,19 @@
     font-family: 'Nunito', sans-serif;
 }
 
-body {
-    background: url('/assets/background.png') no-repeat;
+.bg-img {
+    background-image: url("/assets/03c80f80ab0b24da027706a1157f9f74.jpg");
     background-size: cover;
+    display: flex;
+    height: 100svh;
+    top: 0;
+    bottom: 0;
 }
 
 .container {
     background: #ffffffa1;
     max-width: 520px;
-    margin: 10rem auto 0;
+    margin: 10rem auto auto;
     padding: 2rem;
     border-radius: 8px;
 }
