@@ -11,38 +11,39 @@
     <link rel="stylesheet" href="./styles.css"/>
 </head>
 <body>
-    <div class="container">
-        <h1>Rock Paper Scissors</h1>
-
-        <div class="stage">
-            <div class="card">
-                <p class="player-score_el" id="player_score-el">You: 0</p>
-                <div id="player_choice-el"></div>
+    <div class="bg-img">
+        <div class="container">
+            <h1>Rock Paper Scissors</h1>
+    
+            <div class="stage">
+                <div class="card">
+                    <p class="player-score_el" id="player_score-el">You: 0</p>
+                    <div id="player_choice-el"></div>
+                </div>
+                <div class="card">
+                    <p class="player-score_el" id="computer_score-el">Computer: 0</p>
+                    <div id="computer_choice-el"></div>
+                </div>
             </div>
-            <div class="card">
-                <p class="player-score_el" id="computer_score-el">Computer: 0</p>
-                <div id="computer_choice-el"></div>
+    
+            <p class="text" id="result-el">Press any button to start</p>
+            
+            <div class="controls">
+                <button id="rock-button">
+                    <img src="assets/emoji_rock_.svg" alt="Rock icon"/>
+                    <span>Rock</span>
+                </button>
+                <button id="paper-button">
+                    <img src="assets/emoji_paper_.svg" alt="paper icon"/>
+                    <span>Paper</span>
+                </button>
+                <button id="scissors-button">
+                    <img src="assets/emoji_scissors_.svg"  alt="scissors icon"/>
+                    <span>Scissors</span>
+                </button>
             </div>
-        </div>
-
-        <p class="text" id="result-el">Press any button to start</p>
-        
-        <div class="controls">
-            <button id="rock-button">
-                <img src="assets/emoji_rock_.svg" alt="Rock icon"/>
-                <span>Rock</span>
-            </button>
-            <button id="paper-button">
-                <img src="assets/emoji_paper_.svg" alt="paper icon"/>
-                <span>Paper</span>
-            </button>
-            <button id="scissors-button">
-                <img src="assets/emoji_scissors_.svg"  alt="scissors icon"/>
-                <span>Scissors</span>
-            </button>
         </div>
     </div>
-    
 
     <script src="main.js"></script>
 </body>
