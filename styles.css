@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    user-select: none;
+    font-family: 'Nunito', sans-serif;
+}
+
+body {
+    background: url('/assets/background.svg') no-repeat;
+    background-size: cover;
+}
+
+.container {
+    background: #ffffffa1;
+    max-width: 520px;
+    margin: 10rem auto 0;
+    padding: 2rem;
+    border-radius: 8px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+p {
+    margin-bottom: .5em;
+    text-align: center;
+}
+
+.text {
+    margin-bottom: 2em;
+}
+
+.card {
+    background: #edf1f09c;
+    border-radius: 8px;
+    height: 90px;
+    padding: 1em;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 1em;
+    width: 200px;
+}
+
+.stage {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1em;
+}
+
+.player-score_el {
+    color: #f76a0caf;
+    font-weight: bold;
+}
+
+button {
+    font-family: 'Nunito', sans-serif;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    padding: 1rem;
+    width: 110px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0 .4em 0 .015em #f76a0c;
+    cursor: pointer;
+    background: #f76a0caf;
+    color: #803504;
+}
+
+button:hover {
+    background-color:#f76a0cd5;
+}
+
+button:active {
+    box-shadow: none;
+}
+
+
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+}
+
+.controls img {
+    width: 20px;
+}
+
+@media screen and (max-width: 600px){
+    h1 {
+        font-size: 1.5em;
+    }
+    p, button span {
+        font-size: .6em;
+    }
+    .card {
+        width: 250px;
+    }
+    .stage {
+        gap: .5em;
+    }
+    button {
+        width: 100px;
+        gap: .5em;
+    }
+    .controls {
+        gap: .5em;
+    }
+    .container {
+        width: 300px;
+    }
+}
