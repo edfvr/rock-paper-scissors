@@ -7,7 +7,7 @@
 }
 
 .bg-img {
-    background-image: url("/assets/03c80f80ab0b24da027706a1157f9f74.jpg");
+    background: #74cffab7;
     background-size: cover;
     display: flex;
     height: 100svh;
